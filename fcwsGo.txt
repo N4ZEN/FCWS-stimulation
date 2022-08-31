@@ -1,0 +1,57 @@
+package main
+
+import (
+  "fmt"
+  "time"
+  "math/rand"
+)
+
+var(
+  exit bool = false
+  collision int
+  driverbraked int
+)
+
+func main() {
+  fmt.Println("Car is running on highway. ")
+  
+  go vehicles()
+
+  for {
+
+  }
+
+  fmt.Println("Program has exited.")
+}
+
+func vehicles(){
+  for  {
+    
+    rand.Seed(time.Now().UnixNano())
+    min := 0
+    max := 100
+    collision = rand.Intn(max - min + 1) + min
+    driverbraked = rand.Intn(max - min + 1) + min
+    if(collision > 90){
+      fmt.Println("Obstacle detected")
+      fmt.Println("Driver is warned about obstacle")
+      time.Sleep(1500 * time.Millisecond)
+      if driverbraked > 30 {
+        fmt.Println("Driver has applied brakes.")
+        time.Sleep(100 * time.Millisecond)
+        fmt.Println("Obstacle evaded.")
+        time.Sleep(100 * time.Millisecond)
+        fmt.Println("Car is speeding up again. ")
+      } else {
+        fmt.Println("Driver failed to apply brakes in time")
+        fmt.Println("Automnomous energency breaking initiated. ")
+        fmt.Println("Car has stopped")
+        time.Sleep(100 * time.Millisecond)
+        return;
+      }
+    } else {
+      fmt.Println("Car is running. ")
+      time.Sleep(100 * time.Millisecond)
+    }
+  }
+}
