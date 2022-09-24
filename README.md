@@ -1,27 +1,10 @@
-FORWARD COLLISION WARNING SYSTEM. 
-*************
-This program stimulates the Forward Collision Warning system in a car.
-The radar/Sensor in the front of the car monitors the speed of the vehicle in front of the car
-  together with the distance between any vehicle or obstacle in front of the car.
-The system uses the speed and distance to determine the risk of collision of the car with any
-  vehicle infront of it.
-The system then warns the driver to apply the brakes to avoid collision.
-  if the driver does not apply breaks within 1.5 seconds, the systems AEB(Autonomous Emergency 
-  Breaking) system is initiated,and the system automatically applies the breaks until the car 
-  stops completely.
-**************
-The system is implemented in Java and Go, both with the same designs. 
-The resource efficiency and manegment of the systems are compared using memory usage benchmarking and garbage 
-collection execution times. 
-
-
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
-# FORWARD COLLISION WARNING SYSTEM
+# Forward Collision Warning System
 
-Investigating the Memory management capabilities of Java and Go as a Platform for Forward Collision Warning system
+Investigating the Memory management capabilities of Java and Go as a Platform for a Forward Collision Warning system.
 
 
 ## Getting Started
@@ -35,14 +18,6 @@ Investigating the Memory management capabilities of Java and Go as a Platform fo
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#Installing">Installation</a></li>
-        <li><a href="#Executing program">Execution</a></li>
-      </ul>
-    </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -51,6 +26,11 @@ Investigating the Memory management capabilities of Java and Go as a Platform fo
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+The aim of the system is to investigate the Memory management capabilities of Java and Go as a Platform for a Forward Collision Warning system.
+The system is implemented in Java and Go, both with the same designs. 
+The resource efficiency and manegment of the systems are compared using **memory usage benchmarking** and **garbage 
+collection execution times**. 
+
 
 *************
 This program stimulates the Forward Collision Warning system in a car.
@@ -63,9 +43,6 @@ The system then warns the driver to apply the brakes to avoid collision.
   Breaking) system is initiated,and the system automatically applies the breaks until the car 
   stops completely.
 **************
-The system is implemented in Java and Go, both with the same designs. 
-The resource efficiency and manegment of the systems are compared using memory usage benchmarking and garbage 
-collection execution times. 
 
 
 
@@ -74,33 +51,9 @@ collection execution times.
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 
 
-### prerequisites
-* [react-native](https://reactnative.dev/)
-* A package manager such as [npm](https://nodejs.org/en/download/)
-
-
-### Installing
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/N4ZEN/react-native-arcgis-mapview
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-### Executing program
-run 'nom start' in the project's root directory
-   ```sh
-   npm start
-   ```
-Note: You must input the URL of the arcgis basemap you want to view. 
-
 <!-- LICENSE -->
 ## License
-
-Distributed under the MIT License. 
+Not Licesed
 
 
 
